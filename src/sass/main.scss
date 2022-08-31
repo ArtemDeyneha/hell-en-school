@@ -1,0 +1,24 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/title';
+@import './components/button';
+@import './components/section';
+@import './components/backdrop-modal';
+@import './components/lock';
+@import './components/logo';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/problems';
+@import './layout/approach';
+@import './layout/program';
+@import './layout/teacher';
+@import './layout/guarantee';
+@import './layout/reviews';
+@import './layout/reg-form';
+@import './layout/footer';

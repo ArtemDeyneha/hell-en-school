@@ -1,0 +1,112 @@
+.btn {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  min-width: 260px;
+  height: 48px;
+  padding: 14px 1px;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition-function);
+
+  @media screen and (min-width: 1344px) {
+    font-size: 14px;
+    line-height: 1.214;
+    min-width: 354px;
+    height: 70px;
+    padding: 27px 5px;
+  }
+}
+
+.animate:hover,
+.animate:focus {
+  transform: scale(1.1);
+}
+
+.uptop {
+  position: fixed;
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: rgba(255, 107, 9, 0.5);
+  border-radius: 3px;
+  bottom: 40px;
+  right: 50%;
+  transform: translateX(400%);
+  margin-right: -150px;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, margin-right 0.5s ease-out;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    background-color: var(--accent-color);
+    opacity: 1;
+
+    &::after,
+    &::before {
+      background-color: var(--white-color);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background-color: var(--primary-text-color);
+    top: 10px;
+    transition: all var(--transition-function);
+  }
+
+  &::before {
+    left: 13px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: 13px;
+    transform: rotate(-45deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+    transform: translateX(910%);
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 50px;
+    height: 50px;
+    right: 35%;
+
+    &::before,
+    &::after {
+      height: 22px;
+      top: 14px;
+    }
+
+    &::before {
+      left: 17px;
+    }
+
+    &::after {
+      right: 17px;
+    }
+  }
+}
+
+.upview {
+  transition: opacity 0.3s ease, margin-right 0.5s ease-out,
+    background-color var(--transition-function);
+  margin-right: 0px;
+  opacity: 0.3;
+}

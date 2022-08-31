@@ -1,0 +1,29 @@
+{
+  "name": "hell-en-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://ArtemDeynega.github.io/hell-en-school/",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url /hell-en-school/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemDeynega/hell-en-school.git"
+  },
+  "keywords": [],
+  "author": "Artem Deyneha <artem.deynega89@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemDeynega/hell-en-school/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.26.9"
+  }
+}

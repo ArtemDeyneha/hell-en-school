@@ -1,0 +1,178 @@
+.approach {
+  padding-top: 198px;
+  padding-bottom: 50px;
+}
+
+.approach-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.approach-item {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+
+.approach-card {
+  width: 280px;
+  height: 280px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all var(--transition-function);
+}
+
+.approach-link {
+  display: block;
+  text-decoration: none;
+}
+
+.approach-link:hover .approach-card,
+.approach-link:focus .approach-card {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.approach-link:hover .approach-icon,
+.approach-link:focus .approach-icon {
+  fill: var(--white-color);
+}
+
+.approach-link:hover .approach-text,
+.approach-link:focus .approach-text {
+  color: var(--white-color);
+}
+
+.approach-link:hover .approach-subtitle,
+.approach-link:focus .approach-subtitle {
+  color: var(--white-color);
+}
+
+.approach-link:hover .approach-subtitle::after,
+.approach-link:focus .approach-subtitle::after {
+  background-color: var(--white-color);
+}
+
+.approach-list {
+  margin-bottom: -15px;
+}
+
+.approach-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  fill: var(--accent-color);
+  transition: fill var(--transition-function);
+}
+
+.approach-subtitle {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 42px;
+  color: var(--dark-bg-color);
+  transition: color var(--transition-function);
+}
+
+.approach-subtitle::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--accent-color);
+  bottom: -20px;
+  right: 46%;
+  transition: background-color var(--transition-function);
+}
+
+.approach-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.08em;
+  color: var(--secondary-text-color);
+  text-align: center;
+  transition: color var(--transition-function);
+}
+
+@media screen and (min-width: 768px) {
+  .approach {
+    padding-top: 200px;
+  }
+  .approach-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-bottom: -27px;
+  }
+
+  .approach-item {
+    margin-right: 20px;
+    margin-bottom: 27px;
+  }
+
+  .approach-card {
+    width: 334px;
+    height: 334px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .approach-icon {
+    margin-bottom: 30px;
+  }
+
+  .approach-subtitle {
+    margin-bottom: 52px;
+  }
+  .approach-subtitle::after {
+    bottom: -25px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .approach {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
+  .approach-title {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .approach-list {
+    margin: -10px;
+  }
+  .approach-card {
+    width: 425px;
+    height: 396px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .approach-item {
+    margin: 10px;
+    max-width: calc((100% - 3 * 20px) / 3);
+  }
+
+  .approach-subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .approach-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .approach-subtitle::after {
+    bottom: -15px;
+    right: 46%;
+  }
+}
